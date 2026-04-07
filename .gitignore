@@ -1,0 +1,25 @@
+# dep
+/node_modules
+
+# test
+/coverage
+
+# prod
+/build
+
+# log
+logs
+*.log
+
+# debug
+npm-debug.log*
+
+# env
+.env*
+
+# editor
+cmit_msg.txt
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store

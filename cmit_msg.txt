@@ -1,0 +1,6 @@
+feat: repo init
+
+Initialise repository with utilities:
+- README
+- husky, commitlint, standard-version
+- cmit_msg.txt: git commit -F cmit_msg.txt
