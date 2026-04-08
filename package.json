@@ -1,18 +1,39 @@
 {
   "name": "js_cert",
   "version": "0.0.0",
+  "type": "module",
   "devDependencies": {
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
-    "husky": "^9.1.7",
-    "standard-version": "^9.5.0"
+    "@eslint/css": "^1.1.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^1.2.0",
+    "eslint": "10.2.0",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "^17.4.0",
+    "husky": "9.1.7",
+    "lint-staged": "16.4.0",
+    "prettier": "3.8.1",
+    "standard-version": "9.5.0"
   },
   "scripts": {
     "prepare": "husky",
-    "test": "echo \"No tests yet\"",
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "validate": "npm run lint && npm run format",
     "release": "standard-version",
     "release:patch": "standard-version --release-as patch",
     "release:minor": "standard-version --release-as minor",
     "release:major": "standard-version --release-as major"
+  },
+  "lint-staged": {
+    "*.{js,mjs,cjs,ts,jsx,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{html,css,json, md}": [
+      "prettier --write"
+    ]
   }
 }
