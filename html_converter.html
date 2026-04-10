@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MD2HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/converter.css" />
+  </head>
+
+  <body>
+    <h1>Markdown to HTML Converter</h1>
+    <div id="container">
+      <div class="container">
+        <h2>Markdown Input</h2>
+        <textarea
+          id="markdown-input"
+          placeholder="Enter your markdown here..."
+        ></textarea>
+      </div>
+      <div class="container">
+        <h2>HTML Output</h2>
+        <div id="html-output"></div>
+      </div>
+      <div class="container">
+        <h2>HTML Preview</h2>
+        <div id="preview"></div>
+      </div>
+    </div>
+    <script type="module" src="js/converter.js"></script>
+  </body>
+</html>
