@@ -18,7 +18,6 @@ npm-debug.log*
 .env*
 
 # editor
-cmit_msg.txt
 .vscode/*
 !.vscode/extensions.json
 .idea
